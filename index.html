@@ -11,7 +11,7 @@
 <p>Fourth paragraph</p>
 <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/JavaScript">
-$('p:not(".get")').addClass('selected'); // select all p's that don't have a class of "get"
+$('p:not(.get, :last, :contains("first"))').addClass('selected'); // select all p's that don't have a class of "get", with some add'l complex selectors stacked after
 </script>
 </body>
 </html>
